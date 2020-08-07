@@ -1,0 +1,4356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+  	<link href="css/animate.css" rel="stylesheet">
+    <link href="css/vanilla-calendar-min.css" rel="stylesheet">
+    <link href="css/jquery.datetimepicker.css" rel="stylesheet">
+    <link href="css/bootstrap4_toggle.min.css" rel="stylesheet">
+    <link href="css/jsCalendar.min.css" rel="stylesheet">
+  	<link href="css/style.css" rel="stylesheet">
+    
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="main_con">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">Logo</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle borderless_nav" href="#" id="navbardrop" data-toggle="dropdown"> <i class="fas fa-network-wired"></i> All </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">All</a>
+        <a class="dropdown-item" href="#">10 - Area control</a>
+        <a class="dropdown-item" href="#">12 - Order of the guard</a>
+        <a class="dropdown-item" href="#">14 - Mobile guard</a>
+        <a class="dropdown-item" href="#">16 - Weighing services</a>
+        <a class="dropdown-item" href="#">18 - Arrangment</a>
+        <a class="dropdown-item" href="#">20 - Course</a>
+        <a class="dropdown-item" href="#">22 - Pig control</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link borderless_nav" href="msg.html"> <i class="fas fa-envelope"></i> Messages (0) </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  borderless_nav" href="admin.html"><i class="fas fa-lock"></i> Administrator</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle borderless_nav caretless" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-cogs"></i> Others</a>
+      <div class="dropdown-menu drop_l">
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#profile_modal"><i class="fas fa-user"></i> Profile</a>
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ctrl_modal"><i class="fas fa-columns"></i> Control Panel</a>
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#switch_modal"><i class="fas fa-random"></i> Switch Account</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </div>
+    </li>
+  </ul>
+  <div class="modal fade" id="profile_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3>Profile</h3>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        Generally
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body">
+       <div class="row generally_row">
+         <div class="col-lg-4">
+           <div class="mod_gen_pro_pic_main">
+             <div class="pro_pic"><img src="png/user_demo.png"></div>
+             <div class="id_num_box">
+               <p>test<br><small>ID#:</small></p>
+
+             </div>
+           </div>
+         </div>
+         <div class="col-lg-8">
+           <table class="table table-bordered f14">
+             <tbody>
+               <tr>
+                 <td class="header_td">Name</td>
+                 <td>test<a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Identification number</td>
+                 <td></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Phone number</td>
+                 <td>01234566789<a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Email address</td>
+                 <td>example@email.com<a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Address</td>
+                 <td>Lahore, Pakistan<a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Date of birth</td>
+                 <td>28 November, 2002<a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Personal</td>
+                 <td><a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Account number</td>
+                 <td><a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Employee</td>
+                 <td></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Username</td>
+                 <td>root<a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+               <tr>
+                 <td class="header_td">Password</td>
+                 <td>*******<a href="#"><i class="far fa-edit edit_icons"></i></a></td>
+               </tr>
+
+             </tbody>
+           </table>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        HMS
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <div class="row hms_row">
+          <div class="col-lg-12">
+            <div class="mod_hms_table1">
+              <table class="table table-bordered f14">
+                <tbody>
+                  <tr>
+                    <td style="border:none;"></td>
+                    <td class="header_td">Absence all year</td>
+                    <td class="header_td">Absence last 12 months</td>
+                  </tr>
+                  <tr>
+                    <td class="header_td">Number of sick days with self-report</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td class="header_td">Number of sick days for children / childcare providers</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td class="header_td">Number of sick days with sick leave</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td class="header_td">Holiday</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td class="header_td">Leave of absence</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td class="header_td">Total number</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="mod_hms_table2">
+              <table class="table table-bordered f14">
+                <thead>
+                  <tr>
+                  <td class="header_td">Next of kin</td>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  <td>
+                    <div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+  <label for="phone">Phone number:</label>
+  <input type="text" class="form-control" id="phone">
+</div>
+                  </td>
+                  <td>
+                    <button class="btn" type="button">Save</button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+        Additions
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <div class="row add_row">
+          <div class="col-lg-12">
+            <table class="table table-bordered f14">
+              <thead>
+                <tr>
+                  <td class="header_td">Employee</td>
+                  <td class="header_td">Administrator</td>
+                </tr>
+              </thead>
+              <tbody style="opacity: 0.6;">
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                
+                  </td>
+                  <td>
+                    <label class="switch">
+                       <input type="checkbox" disabled>
+                       <span class="slider round"></span>
+                     </label>
+                     <small style="font-size: 13px; color: cadetblue">Log in</small>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+        Courses/documents
+      </a>
+    </div>
+    <div id="collapseFour" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <div class="row course_row">
+          <div class="col-lg-12">
+            <table class="table table-bordered f14">
+              <thead>
+                <tr>
+                  <td class="header_td">Course</td>
+                  <td class="header_td">Given</td>
+                  <td class="header_td">Trainer</td>
+                  <td class="header_td">Document</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>National basic education</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Weight training course 1</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Weight training course 2</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Weight training course 3</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Orden Guard Training</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--ctrl modal start-->
+<div class="modal fade" id="ctrl_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Control Panel</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div id="accordion1">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne1">
+        Additions
+      </a>
+    </div>
+    <div id="collapseOne1" class="collapse show" data-parent="#accordion1">
+      <div class="card-body">
+        <div class="drop_in">
+                  <div class="form-group">
+                    <small>edit</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo1">
+        Economy
+      </a>
+    </div>
+    <div id="collapseTwo1" class="collapse" data-parent="#accordion1">
+      <div class="card-body">
+        <div class="row eco_row">
+          <div class="col-lg-12">
+            <table class="table table-bordered f14">
+              <tr>
+                <th class="header_td">Adjustment</th>
+              </tr>
+              <tr>
+                <td>Price adjustment of customers</td>
+                <td>
+                  <button type="button" class="btn btn_adjust" data-toggle="modal" data-target="#price_modal" data-dismiss="modal">
+                    Open
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Salary adjustment of employees</td>
+                <td>
+                  <button type="button" class="btn btn_adjust" data-toggle="modal" data-target="#salary_modal" data-dismiss="modal">
+                    Open
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th class="header_td">Sickness</th>
+              </tr>
+              <tr>
+                <td>Calculation of sick pay</td>
+                <td>
+                  <label class="switch">
+                       <input type="checkbox" checked>
+                       <span class="slider round"></span>
+                     </label>
+                </td>
+              </tr>
+              <tr>
+                <th class="header_td">Overlapping additions at the holidays</th>
+              </tr>
+              <tr>
+                <td>Helge additional</td>
+                <td>
+                  <label class="switch">
+                       <input type="checkbox" checked>
+                       <span class="slider round"></span>
+                     </label>
+                </td>
+              </tr>
+              <tr>
+                <td>Night shift allowance</td>
+                <td>
+                  <label class="switch">
+                       <input type="checkbox" checked>
+                       <span class="slider round"></span>
+                     </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree1">
+        Contact person
+      </a>
+    </div>
+    <div id="collapseThree1" class="collapse" data-parent="#accordion1">
+      <div class="card-body">
+        <div class="row contact_row">
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 1</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 2</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 3</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 4</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 5</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 6</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 7</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 8</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 9</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 10</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 11</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 12</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 13</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 14</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 15</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 16</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 17</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 18</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 19</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="drop_in">
+                  <div class="form-group">
+                    <small>Contact person 20</small> 
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour1">
+        Access to control panel
+      </a>
+    </div>
+    <div id="collapseFour1" class="collapse" data-parent="#accordion1">
+      <div class="card-body">
+        <div class="row access_row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <table class="table table-bordered f14">
+              <thead>
+                <tr>
+                  <th class="header_td">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nurul Hasan<i class="fas fa-times cross_ico"></i></td>
+                </tr>
+                <tr>
+                  <td>Ali Danish<i class="fas fa-times cross_ico"></i></td>
+                </tr>
+                <tr>
+                  <td>Nurul Hasan<i class="fas fa-times cross_ico"></i></td>
+                </tr>
+                <tr>
+                  <td>Ali Danish<i class="fas fa-times cross_ico"></i></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--ctrl modal ends-->
+<!--price modal starts-->
+<div class="modal fade" id="price_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Price adjustments of customers</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row price_cus_row">
+          <div class="col-lg-12">
+            <table class="table table-bordered f14">
+              <tbody>
+                <tr>
+                  <td class="header_td">Customers</td>
+                  <td><div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                     <div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="button">Choose all</button>
+  </div>
+                  </div>
+                 
+
+                </div></td>
+                </tr>
+                <tr>
+                  <td class="header_td">Type</td>
+                  <td>
+                    <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                 
+
+                </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="header_td">Change</td>
+                  <td>
+                    <div class="input-group">
+                      <input type="text" class="form-control txt_right" value="0.00">
+                      <div class="input-group-append marginless_app">
+                        <span class="input-group-text">%</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="header_td">Update</td>
+                  <td>
+                    <button type="button" class="btn btn_save">Save</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--price modal ends-->
+<!--salary modal starts-->
+<div class="modal fade" id="salary_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Salary adjustments of employees</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row price_cus_row">
+          <div class="col-lg-12">
+            <table class="table table-bordered f14">
+              <tbody>
+                <tr>
+                  <td class="header_td">Customers</td>
+                  <td><div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                     <div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="button">Choose all</button>
+  </div>
+                  </div>
+                 
+
+                </div></td>
+                </tr>
+                <tr>
+                  <td class="header_td">Type</td>
+                  <td>
+                    <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                 
+
+                </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="header_td">Change</td>
+                  <td>
+                    <div class="input-group">
+                      <input type="text" class="form-control txt_right" value="0.00">
+                      <div class="input-group-append marginless_app">
+                        <span class="input-group-text">%</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="header_td">Update</td>
+                  <td>
+                    <button type="button" class="btn btn_save">Save</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--salary modal ends-->
+<!--switch modal starts-->
+<div class="modal fade" id="switch_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Switch account</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row main4_in_row1_1 link_acc_row">
+          <div class="col-lg-12">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Linked accounts</p>
+                </div>
+                <div class="drop_in f14">
+                  <div class="no_acc_found_box">
+                    <p>No linked account found</p>
+                    <ul>
+                      <li>Enter your username and password in your other account</li>
+                      <li>Click "Add"</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 add_acc f14">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Add account</p>
+                </div>
+                <div class="drop_in f14">
+                  <div class="row add_acc_in_row">
+                    <div class="col-lg-4">
+                      <form>
+                        <label>Username</label>
+                        <div class="input-group">
+                          
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-4">
+                      <form>
+                        <label>Password</label>
+                        <div class="input-group">
+                          
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                          </div>
+                          <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-4">
+                      <button type="button" class="btn"><i class="fas fa-plus"></i> add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--switch modal ends-->
+</nav>
+
+        <div class="sec_navs" style="border-radius: 13px;">
+          <!-- Nav tabs -->
+          <div class="row" style="border-radius: 13px;">
+            <div class="col-lg-2" style="border-top-left-radius: 13px;border-bottom-left-radius: 13px;">
+<ul class="nav nav-tabs flex-column main_nav_tabs" style="border-top-left-radius: 13px;">
+  <li class="nav-item">
+    <a class="nav-link main_nav_link borderless_nav" data-toggle="tab" href="#main1"> <i class="fas fa-home ico_home"></i><br> Start</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link main_nav_link  borderless_nav" data-toggle="tab" href="#main2"><i class="fas fa-mobile-alt ico_mobile"></i><br> Phonebook</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link main_nav_link  borderless_nav" data-toggle="tab" href="#main3"><i class="far fa-list-alt ico_task"></i><br> Tasks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link main_nav_link  borderless_nav" data-toggle="tab" href="#main4"><i class="fas fa-bug ico_report"></i><br> Report</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link main_nav_link  borderless_nav" data-toggle="tab" href="#main5"><i class="far fa-calendar-alt ico_calendar"></i><br> Security List</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link main_nav_link  borderless_nav" data-toggle="tab" href="#main6"><i class="far fa-clock ico_time"></i><br> Timelist</a>
+  </li>
+  <li class="nav-item dropdown nav_drop">
+    <a class="nav-link main_nav_link borderless_nav dropdown-toggle caretless" data-toggle="dropdown" href="#"><i class="fas fa-heartbeat ico_heart"></i><br> HMS</a>
+    <div class="dropdown-menu nav_drop_menu">
+      <a class="dropdown-item" href="#main7" data-toggle="tab">Flag</a>
+      <a class="dropdown-item" href="#main7_0" data-toggle="tab">Documents</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link main_nav_link  borderless_nav" data-toggle="tab" href="#main8"><i class="far fa-money-bill-alt ico_payment"></i><br> Payment</a>
+  </li>
+</ul>
+</div>
+
+<!-- Tab panes -->
+<div class="col-lg-10" style="border-top-right-radius: 13px;border-bottom-right-radius: 13px;">
+<div class="tab-content main_tab_content">
+  <div class="tab-pane" id="main1">
+    <div class="row_in">
+    <div class="row first_page_row">
+      <div class="col-lg-6">
+        <div class="inside_col1_sec1 gray_border small_shad">
+            <small class="msg_from_mng">Message from management</small>
+            <div class="col1_sec1_in gray_border small_shad">
+              <p>   Welcome!.<br><br>
+
+  You are now logged on to Talos AS's reporting platform - Chromium<br><br>
+
+  Remember that all events during the shift must be logged so that the customer has updated reports and relate to them at all times, furthermore, internal control must always be performed and reported by the person who starts the first shift at the assignment site.
+<br><br>
+  We wish all our employees a safe and pleasant guard!
+
+
+ <br><br>
+  <br><span> Updated: 23.08.18 - 00:03</span></p>
+
+            </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6">
+        <div class="inside_col2_sec1 gray_border small_shad">
+            <small class="msg_from_mng">roster</small>
+          <div class="col2_sec1_in">
+            <div class="vanilla-calendar  myCalendar cal1"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="inside_col1_sec2 sec2 gray_border small_shad">
+            <small class="msg_from_mng">Timesheet</small>
+            <div class="col1_sec2_in">
+              <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th> Date</th>
+        <th>Place</th>
+        <th>Hour</th>
+        <th>Kilometer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>11</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>11</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="inside_col2_sec2 sec2 gray_border small_shad">
+            <small class="msg_from_mng">Report</small>
+            <div class="col2_sec2_in">
+              <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th> Date</th>
+        <th>Place</th>
+          <th>Events</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td class="td_center" style="color: steelblue;"> <i class="fas fa-check"></i> </td>
+        <td class="td_center"><a href="#" style="color: gray;"><i class="far fa-file-pdf"></i></a></td>
+        <td class="td_center"><a href="" style="color: gray;"><i class="far fa-envelope"></i></a></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td class="td_center" style="color: steelblue;"> <i class="fas fa-check"></i> </td>
+        <td class="td_center"><a href="#" style="color: gray;"><i class="far fa-file-pdf"></i></a></td>
+        <td class="td_center"><a href="" style="color: gray;"><i class="far fa-envelope"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="tab-pane fade" id="main2">
+    <div class="row_in">
+      <div class="first_page_row">
+        <!-- Nav tabs -->
+<ul class="nav nav-tabs main2_nav_tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#main2_in1">Employed</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#main2_in2">Customers</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="main2_in1">
+    <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Phoen Number</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+  <div class="tab-pane fade" id="main2_in2">
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phoen Number</th>
+        <th>Contact</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+          <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+          <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+          <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+          <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+          <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Doe</td>
+        <td>123456789</td>
+        <td>john@example.com</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="tab-pane fade" id="main3">
+    <div class="row_in">
+      <div class="first_page_row">
+        <div class="main3_inmain">
+          <div class="main3_in">
+            <div class="main3_ico_div">
+              <i class="fas fa-inbox"></i>
+            </div>
+            <div class="main3_text_div">
+              <p>You have not been assigned any tasks<br><span>So ... what do you want to spend your time on then?</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="tab-pane fade" id="main4">
+    <div class="row_in">
+      <div class="first_page_row">
+        <div class="main4_in_row1">
+          <div class="row main4_in_row1_1">
+            <div class="col-lg-4">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" title="test" id="sel1" name="sellist1">
+                      <option>test</option>
+
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <input id="datetimepicker" type="text" >
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main4_in_row2">
+          <!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">Rejected</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu1">Away Shown u/Hend</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu3">Away Shown m/Hend</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu4">Arrest</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu5">Injury</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu6">Internal</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu7">Visit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu8">Photo</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu9">Comment</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu10">Dirt</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu11">Number of guests in the room</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home">
+    <div class="row main4_in_row2_1">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Number</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+            <select class="selectpicker" title="Select" id="sel1" name="sellist1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Affected</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Behavior</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Age</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="4">Identification</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">Other</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="tab-pane fade inside_menu1" id="menu1">
+    <div class="row main4_in_row2_1">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Number</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+            <select class="selectpicker" title="Select" id="sel1" name="sellist1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Affected</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Behavior</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Age</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">Other</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu3">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills alder">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1"><18</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">18-25</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">25-35</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">35-50</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">>50</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills cause">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Slightly Impacted</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Obviously</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Strongly Impacted</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Behavior</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">Age</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">Other</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills power">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">New</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Mild</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Grep</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">lagt ned</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills height">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1"><160</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">160-175</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">175-190</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">>190</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills hair_colour">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Blonde</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Brown</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Black</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Other</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills hair_size">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Long</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Half</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Short</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Shell</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills char">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Piercing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Tatto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Earring</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Beard</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu4">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills alder">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1"><18</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">18-25</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">25-35</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">35-50</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">>50</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills arr_cause">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Penalty over 6 months</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Not waived action</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Under 18 years and especially</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">Fresh deed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">Seizur</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in suspected_of_row">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills suspected_of">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Body insult</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Serious violence</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">False ID</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link grove" data-toggle="pill" tabindex="3">Grove threats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">Weapons Possesion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="6">Drug</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="7">Disturbing public order</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="8">Other</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills power">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">New</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Mild</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Grep</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">lagt ned</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu5">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills alder">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1"><18</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">18-25</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">25-35</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="3">35-50</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="5">>50</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills hurt">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Employee</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu6">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills handcuffs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">If</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills order_room">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Good</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Less good</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Untidy</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu7">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-12">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills who">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Politi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Brannvesen</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Skjenkekontroll</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Annen State</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu8">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-12">
+        <input type="file" class="form-control-file">
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu9">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu10">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu11">
+    <div class="row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Maximum</p>
+          </div>
+          <div class="input-group drop_in col-lg-6">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+              <a href="#" data-toggle="popover" data-trigger="hover" data-content="Blah! blah blah blah!"> <i class="fas fa-info"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Maximum</p>
+          </div>
+          <div class="input-group drop_in col-lg-6">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+              <a href="#" data-toggle="popover" data-trigger="hover" data-content="Blah! blah blah blah!"> <i class="fas fa-info"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="tab-pane fade" id="main5">
+    <div class="row_in">
+      <div class="first_page_row">
+        <!-- Nav tabs -->
+<ul class="nav nav-tabs main2_nav_tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home5">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu5_1">Menu 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu5_2">Menu 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu5_3">Menu 2</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane  active" id="home5">
+    <div class="row securelist_main_row">
+      <div class="col-lg-6">
+        <div class="input_box">
+          <div class="form-group">
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        
+      </div>
+      <div class="col-lg-6">
+        <div class="auto-jsCalendar"></div>
+      </div>
+      <div class="col-lg-6">
+        <div class="num_guard_box">
+          <div class="num_guard_box_in">
+            <p>Number of guards: 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Total time: 00:00:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane  fade" id="menu5_1">
+    <div class="row securelist_main_row">
+      <div class="col-lg-6">
+        <div class="input_box">
+          <div class="form-group">
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+        </div>
+      </div>
+      <div class="col-lg-6"></div>
+      <div class="col-lg-6">
+        <div class="auto-jsCalendar"></div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane  fade" id="menu5_2">
+    <div class="row securelist_main_row">
+      <div class="col-lg-12 third">
+         <div class="form-group">
+                    <label>Place</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                   <div class="form-group">
+                    <label>Month</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                   <div class="form-group">
+                    <label>Year</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                  <div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="button">Save</button>
+  </div>
+      </div>
+      <div class="col-lg-12 third1">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Given</th>
+              <th>Place</th>
+              <th>Start</th>
+              <th>End</th>
+              <th></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane  fade" id="menu5_3">
+    <div class="row securelist_main_row">
+      <div class="col-lg-12 third">
+         <div class="form-group">
+                    <label>Place</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                   <div class="form-group">
+                    <label>Month</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                   <div class="form-group">
+                    <label>Year</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                  <div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="button">Save</button>
+  </div>
+      </div>
+      <div class="col-lg-12 fourth">
+          <div class="main3_in">
+            <div class="main3_ico_div">
+              <i class="fas fa-inbox"></i>
+            </div>
+            <div class="main3_text_div">
+              <p>You have not been assigned any tasks<br><span>So ... what do you want to spend your time on then?</span></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="main6">
+    <div class="row_in">
+      <div class="first_page_row">
+        <ul class="nav nav-tabs main2_nav_tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home6">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu6_1">Menu 1</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home6">
+    <div class="row securelist_main_row">
+      <div class="col-lg-12 third">
+         <div class="form-group">
+                    <label>Place</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                   <div class="form-group">
+                    <label>Month</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                   <div class="form-group">
+                    <label>Year</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                  <div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="button">Save</button>
+  </div>
+      </div>
+      <div class="col-lg-12 third1">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Given</th>
+              <th>Place</th>
+              <th>Timer</th>
+              <th>Pause</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Overall</td>
+              <td></td>
+              <td class="td_center">0.00</td>
+              <td class="td_center">0.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane  fade" id="menu6_1">
+    <div class="row main4_in_row1_1 second">
+      <div class="col-lg-4">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <input id="datetimepicker1" type="text" >
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <input id="datetimepicker2" type="text" >
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                 <label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="main7">
+    <div class="row_in">
+      <div class="first_page_row">
+        <ul class="nav nav-tabs main2_nav_tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home7">Injury</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu7_1">Menu 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu7_2">Menu 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu7_3">Menu 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu7_4">Menu 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu7_5">Menu 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu7_6">Menu 2</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home7">
+    <div class="row injury_row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                   <input id="datetimepicker3" type="text" >
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6"></div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" title="test" id="sel1" name="sellist1">
+                      <option>test</option>
+
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" title="test" id="sel1" name="sellist1">
+                      <option>test</option>
+
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" title="test" id="sel1" name="sellist1">
+                      <option>test</option>
+
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu7_1">
+    <div class="row injury_row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                   <input id="datetimepicker4" type="text" >
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu7_2">
+    <div class="row injury_row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                   <input id="datetimepicker5" type="text" >
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6"></div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills power">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">New</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Mild</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Grep</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">lagt</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu7_3">
+    <div class="row injury_row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                   <input id="datetimepicker6" type="text" >
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6"></div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills power">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">New</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Mild</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Grep</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">lagt</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu7_4">
+    <div class="row injury_row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                   <input id="datetimepicker7" type="text" >
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+                <div class="header_in">
+                  <p>Place</p>
+                </div>
+                <div class="drop_in">
+                  <div class="form-group">
+                    <select class="selectpicker" title="test" id="sel1" name="sellist1">
+                      <option>test</option>
+
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills damage">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">No</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Employed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Guest</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+       <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu7_5">
+    <div class="row injury_row main4_in_row2_2">
+      <div class="col-lg-6">
+        <div class="row1_col_in">
+          <div class="header_in">
+            <p>Cause</p>
+          </div>
+          <div class="drop_in">
+            <div class="drop_in_a_box">
+              <ul class="nav nav-pills sex">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" tabindex="1">Man</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" tabindex="2">Woman</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row1_col_in com">
+          <div class="header_in">
+            <p>Comment</p>
+          </div>
+          <div class="drop_in">
+            <div class="form-group">
+             <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="menu7_6">
+    <div class="row securelist_main_row">
+      <div class="col-lg-12 third">
+         <div class="form-group">
+                    <label>Place</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                   <div class="form-group">
+                    <label>Month</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                   <div class="form-group">
+                    <label>Year</label>
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                     <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                  </div>
+                  <div class="input-group-prepend">
+    <button class="btn btn-outline-primary view_btn" type="button">View</button>
+    <button class="btn btn-outline-primary" type="button">Register Absence</button>
+  </div>
+      </div>
+      <div class="col-lg-12 third1">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Given</th>
+              <th>Place</th>
+              <th>Timer</th>
+              <th>Pause</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Overall</td>
+              <td></td>
+              <td class="td_center">0.00</td>
+              <td class="td_center">0.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="main7_0">
+    <div class="row_in">
+      <div class="first_page_row">
+        <table class="table table-bordered">
+          <thead>
+            <th>Name</th>
+            <th>Comment</th>
+            <th>Uploaded</th>
+            <th>Open Document</th>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="main8">
+    <div class="row_in">
+      <div class="first_page_row">
+          <ul class="nav nav-tabs main2_nav_tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home8">Home</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home8">
+    <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Hours worked</th>
+        <th>Kilometer</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Overall</td>
+        <td class="td_center">0.00</td>
+        <td class="td_center">0.00</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane active" id="main9_msg">
+    <div class="row_in">
+      <div class="first_page_row">
+        <ul class="nav nav-tabs main2_nav_tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home9_msg">Inbox</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu9_1_msg">Send message</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu9_2_msg">Sent messages</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="home9_msg">
+            <div class="col-lg-12 fourth">
+          <div class="main3_in">
+            <div class="main3_ico_div">
+              <i class="fas fa-inbox"></i>
+            </div>
+            <div class="main3_text_div">
+              <p>You have not been assigned any tasks<br><span>So ... what do you want to spend your time on then?</span></p>
+
+          </div>
+        </div>
+      </div>
+          </div>
+          <div class="tab-pane fade" id="menu9_1_msg">
+            <div class="row send_msg_row main4_in_row2_2">
+              <div class="col-lg-6">
+                <div class="type_box type_box0">
+                  <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" tabindex="1">Chromium</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" tabindex="1">SMS</a>
+                  </li>
+                </ul>
+                </div>
+                
+              </div>
+              <div class="col-lg-3">
+                <div class="type_box type_box1">
+                  <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01">
+                    <label class="custom-file-label" for="inputGroupFile01"><i class="fas fa-link"></i></label>
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+              <div class="col-lg-3">
+                <button class="btn send_msg_btn" type="button">Send a message</button>
+              </div>
+              <div class="col-lg-12 extra_margin">
+                <div class="row1_col_in com">
+                  <div class="header_in">
+                    <p>Message</p>
+                  </div>
+                  <div class="drop_in">
+                    <div class="form-group">
+                     <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="reciever_box reciever_box0">
+                  <div class="form-group">
+                    <select class="selectpicker" data-live-search="true" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+
+                </div>
+                </div>
+                  
+              </div>
+              <div class="col-lg-6">
+                <div class="reciever_box reciever_box1">
+                  <div class="form-group">
+                    <select class="selectpicker" title="Select" id="sel1" name="sellist1">
+                      <option>BD</option>
+                      <option>PAK</option>
+                      <option>Saudi</option>
+                      <option>UAE</option>
+                    </select>
+                    <span><button type="button" class="msg_groups_btn" data-toggle="modal" data-target="#msg_groups_modal"><i class="fas fa-edit"></i></button></span>
+                </div>
+
+                </div>
+                <!--msg groups modal starts-->
+                <div class="modal fade" id="msg_groups_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Message groups</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="msg_groups_modal_row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control mb3" id="usr">
+              <div class="input-group-append">
+                <button class="btn btn_add_name" type="button">Add name</button>
+              </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <table class="table table-bordered f14">
+              <thead>
+                <tr>
+                  <th class="header_td">Name</th>
+                   <th class="header_td">Employees</th>
+                    <th class="header_td">Change</th>
+                     <th class="header_td">Delete</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+                <!--msg groups modal ends-->
+              </div>
+              <div class="col-lg-12">
+        <div class="save_btn_box">
+          <button type="button" class="btn btn-primary">save</button>
+        </div>
+      </div>
+            </div>
+            
+          </div>
+          <div class="tab-pane fade" id="menu9_2_msg">
+             <div class="col-lg-12 fourth">
+          <div class="main3_in">
+            <div class="main3_ico_div">
+              <i class="fas fa-inbox"></i>
+            </div>
+            <div class="main3_text_div">
+              <p>You have not been assigned any tasks<br><span>So ... what do you want to spend your time on then?</span></p>
+
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+        <div class="footer">
+          <h1>Footer Goes HEre</h1>
+        </div>
+      </div>
+    </div>
+
+    <!--javascript plugins-->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/superplaceholder.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+  	<script src="js/waypoints.min.js"></script>
+  	<script src="js/jquery.counterup.min.js"></script>
+    <script src="js/vanilla-calendar-min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/cal.js"></script>
+    <script src="js/bootstrap4-toggle.min.js"></script>
+    <script src="js/jsCalendar.min.js"></script>
+  	<script src="js/myscript.js"></script>
+
+  </body>
+</html>

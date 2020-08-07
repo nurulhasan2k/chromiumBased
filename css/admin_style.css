@@ -1,0 +1,815 @@
+.sec2{
+	margin-top: 0px;
+}
+.sec2_with_margin{
+	margin-top: 30px;
+}
+.admin_bday_extended_info_box{
+	margin-top: 35px;
+}
+.admin_bday_extended_info_btn{
+	background: transparent;
+    border: 1px solid lightgray;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+}
+.admin_no_employee_loggedin_box{
+	    border: 1px solid lightgray;
+    padding: 15px 0px 5px 0px;
+    border-radius: 5px;
+}
+.large_info_ico_box i{
+	font-size: 50px;
+    color: gray;
+    margin-left: 25px;
+}
+.large_info_ico_box p{
+	margin-top: 5px;
+}
+.main_nav_tabs .nav-item{
+	//width: 11.11%;
+}
+.admin_new_employee_btn{
+	    margin-left: auto;
+    margin-bottom: 10px;
+    background: cadetblue;
+    color: #fff;
+    border: 1px solid cadetblue;
+}
+.admin_new_employee_btn:hover{
+	background: transparent;
+	color: cadetblue;
+}
+#main3 .tab-content{
+	    margin: 0px 20px;
+    border: 1px solid lightgray;
+    border-top: none;
+    padding-top: 4px;
+}
+#main3 .table{
+	width: 98%;
+    box-shadow: 0px 1px 3px 0px lightgrey;
+    margin: 20px 12px;
+}
+.admin_tab_content{
+	border: 1px solid lightgray;
+    margin: 0px 20px;
+    border-top: none;
+     padding-top: 4px;
+}
+#home4 .securelist_main_row{
+	margin: 0px 15px 15px 15px;
+    padding-top: 16px;
+}
+#home4_0 .securelist_main_row{
+	margin: 0px 15px 15px 15px;
+    padding-top: 16px;
+}
+#home4 .securelist_main_row .third{
+	    border: 1px solid lightgray;
+    padding-top: 15px;
+}
+#home4_0 .securelist_main_row .third{
+	    border: 1px solid lightgray;
+    //padding-top: 15px;
+}
+#home4 .securelist_main_row .third .bootstrap-select{
+	margin-right: 14px;
+}
+#home4 .securelist_main_row .third1, #menu5_3 .securelist_main_row .fourth{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#home4_0 .securelist_main_row .third1, #menu5_3 .securelist_main_row .fourth{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#home4 .securelist_main_row .third1 .table{
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+#home4_0 .securelist_main_row .third1 .table{
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+#home4 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 95%;
+}
+#menu4_1 .btn-outline-primary{
+	margin-top: 60px;
+}
+#home4_0 .btn-outline-primary{
+	margin-top: 60px;
+}
+#menu4_1_0 .btn-outline-primary{
+	margin-top: 60px;
+}
+#menu4_1 .securelist_main_row .third .form-group{
+	margin-left: 15px;
+}
+#home4_0 .securelist_main_row .third .form-group{
+	margin-left: 15px;
+}
+#menu4_1_0 .securelist_main_row .third .form-group{
+	margin-left: 15px;
+}
+#menu4_1_0 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 100%;
+}
+#datetimepicker_admin_1{
+	line-height: 2;
+    /* width: -webkit-fill-available; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 60%;
+}
+#datetimepicker_admin_2{
+	line-height: 2;
+    /* width: -webkit-fill-available; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 60%;
+}
+.datetimepicker{
+	line-height: 2;
+    /* width: -webkit-fill-available; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 60%;
+}
+#rental_home .info_row .datetimepicker{
+	width: 100%;
+}
+#rental_home .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+#rental_home .rental_home_down .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 99%;
+}
+#datetimepicker_admin_3{
+	line-height: 2;
+    /* width: -webkit-fill-available; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 60%;
+}
+#datetimepicker_admin_4{
+	line-height: 2;
+    /* width: -webkit-fill-available; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 60%;
+}
+#datetimepicker_admin_5{
+	line-height: 2;
+    /* width: -webkit-fill-available; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 60%;
+}
+#datetimepicker_admin_6{
+	line-height: 2;
+    /* width: -webkit-fill-available; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 60%;
+}
+.admin_main_table{
+	    margin: 20px 12px;
+	    width: 98%;
+    box-shadow: 0px 1px 3px 0px lightgrey;
+}
+.admin_third{
+	padding: 0px 34px;
+}
+.admin_third_in_row{
+	    border: 1px solid;
+    border-radius: 5px;
+    border-color: lightgray;
+    margin-bottom: 20px;
+}
+.admin_mar_top_btn{
+	margin-top: 30px;
+}
+.admin_third_in{
+	border: 1px solid lightgray;
+    max-width: 95.5%;
+    margin: 10px 30px;
+}
+#main7_1 .table{
+	width: 97%;
+	margin: 0px 20px;
+}
+.admin_datetime{
+	line-height: 2;
+    /* width: -webkit-fill-available; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 60%;
+}
+.admin_select{
+	margin-bottom: 15px;
+}
+.admin_select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 100%;
+}
+#home7 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 115px;
+	margin-right: 10px;
+}
+#main7_2 .securelist_main_row .third1 .table{
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+#main7_2 .securelist_main_row .third{
+	    border: 1px solid lightgray;
+    padding-top: 15px;
+}
+#main7_2 .securelist_main_row{
+	margin: 0px 15px 15px 15px;
+    padding-top: 16px;
+}
+#home7 .securelist_main_row .third1 .table{
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+#home7 .securelist_main_row .third{
+	    border: 1px solid lightgray;
+    padding-top: 15px;
+}
+#home7 .securelist_main_row{
+	margin: 0px 15px 15px 15px;
+    padding-top: 16px;
+}
+#menu7_2 .securelist_main_row .third1 .table{
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+#menu7_2 .securelist_main_row .third{
+	    border: 1px solid lightgray;
+    padding-top: 15px;
+}
+#menu7_2 .securelist_main_row{
+	margin: 0px 15px 15px 15px;
+    padding-top: 16px;
+}
+#menu7_1 .securelist_main_row .third1 .table{
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+#menu7_1 .securelist_main_row .third{
+	    border: 1px solid lightgray;
+    padding-top: 15px;
+}
+#menu7_1 .securelist_main_row{
+	margin: 0px 15px 15px 15px;
+    padding-top: 16px;
+}
+.padd_LR_0{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#menu7_1 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+	margin-right: 14px;
+}
+#menu7_2 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+	margin-right: 14px;
+}
+#main7_2 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+	margin-right: 14px;
+}
+.margin_R_15{
+	margin-right: 15px;
+}
+#rental_home .row1_col_in{
+	border: 1px solid
+lightgray;
+
+padding: 10px;
+
+border-radius: 5px;
+
+margin: 15px 10px;
+}
+#rental_home .rental_invoice_basis_box{
+	border: 1px solid
+cadetblue;
+
+border-radius: 5px;
+
+margin: 15px 10px;
+
+padding: 10px;
+
+background:
+lightcyan;
+}
+.rental_home_down .btn_save{
+	background:
+slateblue;
+
+color:
+#fff;
+border: 1px solid slateblue;
+margin-top: 30px;
+
+margin-left: auto;
+
+display: block;
+}
+.rental_home_down .btn_save:hover{
+	background: transparent;
+	color: slateblue;
+}
+.rental_home_down{
+	padding: 10px;
+}
+#rental_menu1 .securelist_main_row{
+	margin: 0px 15px 15px 15px;
+
+padding-top: 16px;
+}
+#rental_menu1 .securelist_main_row .third {
+
+    border: 1px solid 
+
+    lightgray;
+    padding-top: 15px;
+
+}
+#rental_menu1 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+	margin-right: 15px;
+}
+#rental_menu1 .securelist_main_row .third1{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 15px;
+}
+#rental_menu1 .securelist_main_row .third1 .table{
+	margin-bottom: 0px;
+}
+.eco_invoice_basis_row .row1_col_in {
+
+    border: 1px solid 
+
+    lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 10px;
+
+}
+#eco_invoice .info_row .datetimepicker {
+
+    width: 100%;
+
+}
+.eco_invoice_basis_row .info_row_edit{
+	//margin-top: 43px;
+
+margin-left: 10px;
+}
+.eco_invoice_basis_row .info_row_edit .form-group{
+	margin-bottom: 0px;
+}
+.eco_invoice_basis_row .info_row_edit .btn_save{
+	margin-left: 10px;
+
+border: 1px solid
+slateblue;
+
+background:
+slateblue;
+
+color:
+#fff;
+}
+.eco_invoice_basis_row .info_row_edit .btn_save:hover{
+	background: transparent;
+	color: slateblue;
+}
+.eco_pro_acc_row .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 75%;
+}
+.eco_pro_acc_row .form-group{
+	margin-bottom: 0px;
+}
+.eco_pro_acc_row .btn_save{
+	border: 1px solid
+slateblue;
+
+background:
+slateblue;
+
+color:
+#fff;
+}
+.eco_pro_acc_row .btn_save:hover{
+	background: transparent;
+	color: slateblue;
+}
+.eco_pro_acc_row{
+	margin: 0px 15px;
+
+border: 1px solid
+lightgray;
+
+border-radius: 5px;
+
+padding: 10px;
+}
+#mbl_sales_overview .rental_invoice_basis_box{
+	border: 1px solid
+cadetblue;
+
+border-radius: 5px;
+
+margin: 15px 10px;
+
+padding: 10px;
+
+background:
+lightcyan;
+}
+#mbl_sales_cal .show_week_box{
+	border: 1px solid
+lightgray;
+margin: 10px 15px;
+padding: 15px 0px 0px 15px;
+}
+#mbl_sales_cal .show_week_box .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 50%;
+}
+#mbl_sales_cal .table{
+	margin: 15px;
+width: 97.5%;
+}
+#mbl_sales_reports{
+	padding: 15px 0px;
+}
+#mbl_sales_reports .securelist_main_row {
+    margin: 0px 15px 15px 15px;
+    padding-top: 16px;
+}
+#mbl_sales_reports .securelist_main_row .third {
+    border: 1px solid 
+    lightgray;
+    padding-top: 15px;
+}
+#mbl_sales_reports .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+    margin-right: 15px;
+}
+#mbl_sales_reports .securelist_main_row .third1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 15px;
+}
+#report_mbl_in .datetimepicker{
+	width: 10%;
+	margin-top: 30px;
+}
+#report_mbl_in .input-group-prepend{
+	width: max-content;
+width: fit-content;
+float: right;
+}
+#report_round_in .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 100%;
+}
+#report_dev_in .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 100%;
+}
+#report_round_in .input-group-prepend{
+	width: max-content;
+	width: fit-content;
+	float: right;
+}
+#report_round_in .datetimepicker{
+	width: 8%;
+	margin-top: 30px;
+}
+#report_dev_in .datetimepicker{
+	width: 8%;
+	margin-top: 30px;
+}
+#report_round_in .input-group-prepend .btn{
+	margin-right: 10px;
+}
+#report_dev_in .input-group-prepend{
+	width: max-content;
+	width: fit-content;
+	float: right;
+}
+#mbl_sales_roadmaps .table{
+	margin: 10px 15px;
+width: 97.5%;
+}
+.mbl_sales_objects_in .table{
+	margin: 10px 15px;
+
+border: 1px solid
+lightgray;
+
+width: 97.6%;
+}
+#home5 .show_week_box {
+    border: 1px solid lightgray;
+    margin: 10px 15px;
+    padding: 15px 0px 0px 15px;
+}
+#home5 .table{
+    margin: 15px;
+    width: 97.5%;
+}
+#home5 .btn_envoy{
+	margin-left: 10px;
+}
+#secure_draft_tab .securelist_main_row {
+    margin: 0px 15px 15px 15px;
+    padding-top: 16px;
+}
+#secure_draft_tab .securelist_main_row .third {
+    border: 1px solid lightgray;
+    padding-top: 15px;
+}
+#secure_draft_tab .securelist_main_row .third1{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#secure_draft_tab .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+    margin-right: 10px;
+}
+#secure_draft_tab .table{
+	margin-top: 15px;
+    margin-bottom: 0px;
+}
+#main6 .first_row_box .securelist_main_row {
+    margin: 0px 20px 15px 20px;
+    padding-top: 16px;
+}
+#main6 .first_row_box .securelist_main_row .third {
+    border: 1px solid lightgray;
+    padding-top: 15px;
+}
+#main6 .first_row_box .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+#main6 .first_row_box .form-group{
+	margin-right: 10px;
+	width: 7.5%;
+}
+#main6 .first_row_box .fg_15{
+	width: 14%;
+}
+#main6 .first_row_box .fg_9{
+	width: 9%;
+}
+#main6 .first_row_box .redo{
+	margin-left: 10px;
+}
+.mar_table{
+	margin: 31px 15px 15px 15px;
+    width: 97.5%;
+}
+#menu6_3 .rental_invoice_basis_box {
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+        margin: 20px 16px -10px;
+    padding: 10px;
+    background: lightcyan;
+    opacity: 0.7;
+}
+.slate_btn{
+	background: slateblue;
+	color: #fff;
+	border: 1px solid slateblue;
+}
+.slate_btn:hover{
+	background: #fff;
+	color: slateblue;
+}
+.print_btn{
+	background: transparent;
+    color: #fff;
+    border: 1px solid;
+    font-size: 15px;
+}
+.print_btn:hover{
+	border-color: royalblue;
+	cursor: pointer;
+}
+.aprt_td{
+	width: 23px;
+}
+.rental_invoice_basis_box .close{
+	bottom: 85px;
+    position: relative;
+}
+#main5 .nav-link{
+	padding: 15px 25px;
+}
+#home5 .table a{
+	color: #fff;
+}
+#home5 .table img{
+	width: 25px;
+}
+#main5 .switch{
+	margin-left: auto;
+    margin-top: 15px;
+}
+.f12{
+	font-size: 12px;
+}
+#menu5_2 .third1 .table .form-group{
+	margin-bottom: 0px;
+}
+#menu5_2 .third1 .table .form-group .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+#main5 .assign_btn{
+	text-align: center;
+    background: transparent;
+    border: 1px solid lightgray;
+    color: gray;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+#main5 .assign_btn:hover{
+	background: lightgray;
+	cursor: pointer;
+}
+#main5 .input-group-prepend .switch{
+	margin-top: 5px;
+}
+.old_view_span{
+	font-size: 14px;
+    margin-top: 7px;
+    margin-left: 3px;
+}
+#secure_turnus_tab .input_box:before{
+	content: 'Place';
+	background: steelblue;
+	color: #fff;
+	padding:0px 10px;
+	position: relative;
+	left: 400px;
+	bottom: 20px;
+}
+#secure_mal_tab .input_box:before{
+	content: 'Place';
+	background: steelblue;
+	color: #fff;
+	padding:0px 10px;
+	position: relative;
+	left: 400px;
+	bottom: 20px;
+}
+.red_back{
+	background: indianred;
+}
+.btn_left{
+	    margin-top: 20px;
+    margin-left: auto;
+    display: block;
+}
+.admin_mar_top_btn1{
+	margin-top: 15px;
+}
+#main8 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	margin-top: 15px;
+}
+.header_td1{
+	background: lightseagreen;
+}
+#rental_menu1 .assign_btn{
+	background: transparent;
+    border: 1px solid gray;
+    color: gray;
+    padding: 5px 10px;
+}
+#rental_menu1 .assign_btn:hover{
+	background: lightgray;
+	cursor: pointer;
+}
+.eco_pro_acc_row .datetimepicker{
+	margin-top: 35px;
+}
+.eco_pro_acc_row .btn_save{
+	margin-top: 34px;
+}
+#new_customer_modal .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 100%;
+}
+#new_customer_modal .modal-body .slate_btn{
+	    margin-top: 32px;
+    margin-left: auto;
+    display: block;
+}
+#rep_new_roadmap_modal .modal-body .slate_btn{
+	margin-top: 29px;
+	margin-left: auto;
+	display: block;
+}
+#record_hours_modal .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 100%;
+}
+#reg_abs_modal .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+#reg_abs_modal .datetimepicker{
+	width: 100%;
+}
+#reg_abs_modal .main4_in_row2_2 .nav-link{
+	padding: 15px 0px;
+}
+#new_ros_ana_modal .form-group{
+	width: 100%;
+	margin-bottom: 0px;
+}
+#new_ros_ana_modal .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+.f13{
+	font-size: 13px;
+}
+#new_task_modal .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+#new_event_modal .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+#new_event_modal .datetimepicker {
+	width: 100%;
+	line-height: 2.4;
+}
+.new_employee_modal_row .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+	border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.new_employee_modal_row .bootstrap-select>.dropdown-toggle{
+	    background: transparent;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#usr_info_modal .modal-header .fas{
+	font-size: 15px;
+	font-weight: normal;
+}
+#usr_info_modal .modal-body{
+	text-align: left;
+}
+#usr_info_collapse1 .table{
+	margin-top: 0px;
+}
+#usr_info_modal .table{
+	margin: 0px;
+	width: 100%;
+}
+#usr_info_collapse3 .mod_hms_table1 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 35%;
+}
+#usr_info_collapse4 .print_btn{
+	float: right;
+	margin-right: 5px;
+}
+.txt_right{
+	text-align: right;
+}
+.marginless_app{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.nn .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+#usr_info_collapse5 .datetimepicker, #usr_info_collapse6 .datetimepicker{
+	line-height: 2.4;
+}
+.mar_T20{
+	margin-top: 20px!important;
+}
+.txt_left{
+	text-align: left;
+}
+#usr_info_collapse2_4_cus .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+#report_mbl_sales .nav-link{
+	padding: 15px 35px;
+}
+#menu7_1 .securelist_main_row .third .form-group{
+	width: 12%;
+	margin-right: 10px;
+}
+#menu7_2 .securelist_main_row .third .form-group{
+	width: 12%;
+	margin-right: 10px;
+}
